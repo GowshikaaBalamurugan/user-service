@@ -1,9 +1,8 @@
 package com.dkart.userservice.config;
 
-import com.dkart.userservice.entity.CustomUserDetails;
+import com.dkart.userservice.dto.CustomUserDetails;
 import com.dkart.userservice.entity.UserCredential;
 import com.dkart.userservice.repository.UserCredentialRepository;
-import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;

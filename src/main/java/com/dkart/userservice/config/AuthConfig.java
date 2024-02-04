@@ -1,5 +1,6 @@
 package com.dkart.userservice.config;
 
+import com.dkart.userservice.dto.CustomSuccessResponse;
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -55,4 +56,5 @@ public class AuthConfig {
     public ModelMapper modelMapper(){
         return new ModelMapper();
     }
+
 }

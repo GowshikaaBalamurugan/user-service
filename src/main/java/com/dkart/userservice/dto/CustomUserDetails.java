@@ -1,5 +1,6 @@
-package com.dkart.userservice.entity;
+package com.dkart.userservice.dto;
 
+import com.dkart.userservice.entity.UserCredential;
 import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -21,9 +22,6 @@ public class CustomUserDetails implements UserDetails {
         this.password = userCredential.getPassword();
         this.role=userCredential.getRole();
     }
-
-
-
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

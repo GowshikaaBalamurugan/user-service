@@ -1,14 +1,15 @@
-package com.dkart.userservice.entity;
+package com.dkart.userservice.dto;
+
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class AuthRequest {
-
+@NoArgsConstructor
+public class UserDTO {
     private String username;
-    private String password;
+    private String email;
 }
